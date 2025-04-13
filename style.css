@@ -4,21 +4,20 @@
     position: relative;
     top: 0%;
     width: 100%;
-    padding: 1.5rem 5%;
+    padding: 2rem 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(10, 10, 10, 0.95);
+    background: rgba(54, 1, 97, 0.95);
     backdrop-filter: blur(10px);
     z-index: 1000;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
 
 }
 
 .logo{
-
     font-size: 1.8rem;
-    font-weight: 700;
+    font-weight: 900;
     color: var(--acent);
     text-decoration: none;
     position: relative;
@@ -44,7 +43,6 @@
 }
 
 .nav-lins a::after {
-
     content: '';
     position: absolute;
     bottom: -5px;
@@ -56,29 +54,89 @@
 }
 
 .nav-links a:hover::after {
-
         width: 100%;
 
 }
 
 *{margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
+   padding: 0%;
+   box-sizing: border-box;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 :root {
-    --dark-bg: #0a0a0a;
-    --darker-bg: #050505;
+    --dark-bg: #380252;
+    --darker-bg: #380252;
     --accent: #2ecc71;
     --accent-glow: rgba(46, 204, 113, 0.4);
     --text: #ffffff;
 }
 
     body {
-        background-color: var(--dark-bg);
+        background-color: #7f08b6;
         color: var(--text);
         line-height: 1.6;
         overflow-x: hidden;
+    
     }
+    
+    body {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: right;
+        flex-direction: column;
+    }
+    
+    nav {
+        width: 80%;
+        height: 70px;
+        /* border: 1px solid red; */
+        background: #000;
+        display: flex;
+        margin-top: 50px;
+    }
+    
+
+    .search {
+        width: 50%;
+        height: 100%;
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .search input {
+        width: 80%;
+        padding: 10px 15px;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+    }
+    
+    ul {
+        width: 35%;
+        height: 100%;
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    ul li a {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 16px;
+        transition: all .3s ease-in-out;
+    }
+    
+    ul li a:hover {
+        color: rgb(80, 80, 80);
+    }
+
+    .bg1 {
+        background: #fff;
+    }
+    
